@@ -27,7 +27,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'Поиск адресов',
+        'brandLabel' => 'Тендеры',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -36,8 +36,9 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Список', 'url' => ['/site/index']],
-            ['label' => 'Добавить', 'url' => ['/site/create']],
+            ['label' => 'Тендеры', 'url' => ['/tenders/index']],
+            ['label' => 'Заявки', 'url' => ['/request/index']],
+            ['label' => 'Компании', 'url' => ['/company/index']],
             ['label' => 'Обо мне', 'url' => ['/site/about']],
 
         ],
